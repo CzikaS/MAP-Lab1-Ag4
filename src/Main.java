@@ -6,8 +6,11 @@ public class Main {
 
         System.out.println(shop.getCheapestKeyboard());
         System.out.println(shop.getMostExpensiveObject());
+
         System.out.println(shop.getMostExpensiveUsbInBudget(10));
         System.out.println(shop.getMostExpensiveUsbInBudget(70));
+
+        System.out.println(shop.getMaxMoneySpent(70));
 
     }
 }
