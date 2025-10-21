@@ -25,4 +25,12 @@ public class ElectronicsStore {
                 mostExpensive = keyboard;
         return mostExpensive;
     }
+
+    public int getMostExpensiveUsbInBudget(int budget){
+        int mostExpensiveInBudget = -1;
+        for (int usb : usbSticks)
+            if (mostExpensiveInBudget < usb && usb <budget)
+                mostExpensiveInBudget = usb;
+        return mostExpensiveInBudget;
+    }
 }
