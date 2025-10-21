@@ -5,6 +5,7 @@ public class Main {
         ElectronicsStore shop = new ElectronicsStore(usbSticks, keyboards);
 
         System.out.println(shop.getCheapestKeyboard());
+        System.out.println(shop.getMostExpensiveObject());
 
     }
 }

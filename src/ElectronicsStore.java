@@ -15,5 +15,14 @@ public class ElectronicsStore {
         return cheapestKeyboard;
     }
 
-
+    public int getMostExpensiveObject(){
+        int mostExpensive = usbSticks[0];
+        for (int usb : usbSticks)
+            if (usb > mostExpensive)
+                mostExpensive = usb;
+        for (int keyboard : keyboards)
+            if (keyboard > mostExpensive)
+                mostExpensive = keyboard;
+        return mostExpensive;
+    }
 }
